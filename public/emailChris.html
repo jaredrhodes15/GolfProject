@@ -29,20 +29,22 @@
   <img src="assets/cooltext316042578940380.png" alt="Title Banner">
   <br>
 <!--Email form-->
-  <form name="sendEmail">
-    <div class="form-group">
-      <legend><span name="members" class="section">1</span>  Your Name?</legend>
-      <input type="text" class="form-control" id="yourName">
-      <legend><span name="members" class="section">2</span>  Your Email Address?</legend>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="form-group">
-      <legend><span name="members" class="section">3</span>  Type Your Email Here.</legend>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-      </fieldset>
-    </div>
-  </form>
+  <main>
+    <form class="contact-form" action="contactform.php" method="post" name="sendEmail">
+      <div class="form-group">
+        <legend><span name="members" class="section">1</span>  Your Name?</legend>
+        <input type="text" class="form-control" name="name" id="yourName">
+        <legend><span name="members" class="section">2</span>  Your Email Address?</legend>
+        <input type="email" class="form-control" name="mail" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <legend><span name="members" class="section">3</span>  Type Your Email Here.</legend>
+        <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <fieldset>
+          <button name="submit" type="submit" name="submit" id="contact-submit" data-submit="...Sending">Send E-mail</button>
+        </fieldset>
+      </div>
+    </form>
+  </main>
 </body>
 </html>
