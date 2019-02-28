@@ -7,7 +7,11 @@
     <title>Avila Family Golf Tournament</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito"></head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <script
+     src="https://www.paypal.com/sdk/js?client-id=AdkvROnz6AWo1D9G-8JBHpHvzyHNzIuEqHXEpxZ-ir1ndAur1wsMIUA0VtKMhuPER01HcPPoTDVNoYCT">
+   </script>
+  </head>
 <body>
         <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
                 <a class="navbar-brand" href="index.html">Home</a>
@@ -51,8 +55,27 @@
                                     </div>
                                     <div class="col-sm">
                                         <h2>PAYPAL GOES UNDER THIS H2 TAG</h2>
-                                            <p class="apiText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eum aliquid nostrum ipsum iure consectetur dolor labore dolore deserunt qui quas, fuga temporibus quod ut inventore culpa quibusdam architecto voluptate.</p>
-                                    </div>                           
+                                        <div id="paypal-button-container">
+
+                                          <script>
+                                                                                                                           
+                                  
+                                            paypal.Buttons({
+                                             createOrder: function(data, actions) {
+                                            // Set up the transaction
+                                            return actions.order.create({
+                                              purchase_units: [{
+                                                amount: {
+                                                  value: '0.01'
+                                                     }
+                                                   }]
+                                                 });
+                                                }
+                                              }).render('#paypal-button-container');                              
+    
+                                        </script>
+    
+                                      </div>                                    </div>                           
                                 </div>
                                 </div>
                                 <div class="col-sm">
