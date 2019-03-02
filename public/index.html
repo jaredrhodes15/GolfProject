@@ -15,10 +15,12 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
     <a class="navbar-brand" href="index.html">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
+
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,135 +31,117 @@
         <li class="nav-item">
           <a class="nav-link" href="emailChris.html">Email Chris</a>
         </li>
-        <!-- <li class="nav-item">
-                      <a class="nav-link" href="#">Sign Up A Group</a>
-                    </li> -->
-        <!-- <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-        </li>
+
       </ul>
     </div>
   </nav>
+    <!--Whole Webpage Container-->
   <div class="container-fluid">
     <div class="row no-gutters">
       <div class="col-sm">
-        <img src="assets/cooltext316042578940380.png" alt="Title Banner"> <br>
+        <!--Avila Banner full width column and row-->
+        <img src="assets/cooltext316042578940380.png" alt="Title Banner">                              <br>
         <br>
-        <div class="row">
-          <div class="col-sm">
-            <p class="golfInfo">ALL OF THE TOURNAMENT INFO WILL GO HERE. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Quam, vitae asperiores ratione repellendus eaque repudiandae qui, exercitationem
-              quaerat quod nemo excepturi eveniet quae molestias vel cum aliquam sit eos? Iste!</p>
-            <div class="row">
-              <div class="col-sm">
-                <p class="groupArea">WE WILL USE HANDLEBARS HERE!!! GIT ALL GROUPS WILL BE ADDED HERE Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Voluptatem aperiam ullam molestias vero totam, nesciunt culpa
-                  quo blanditiis itaque rem maxime voluptas in consectetur laboriosam modi veritatis, corrupti odio
-                  quam.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <iframe src="https://calendar.google.com/calendar/b/2/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=event.calendar.uou%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FDenver"
-                  style="border-width:0" width="600" height="500" frameborder="0" scrolling="no"></iframe>
-              </div>
-              <div class="col-sm">
-                <h2>PAYPAL GOES UNDER THIS H2 TAG</h2>
-                <div id="paypal-button-container">
-
-                  <script>
-
-
-                    paypal.Buttons({
-                                             createOrder: function(data, actions) {
-                                            // Set up the transaction
-                                            return actions.order.create({
-                                              purchase_units: [{
-                                                amount: {
-                                                  value: '0.01'
-                                                     }
-                                                   }]
-                                                 });
-                                                }
-                                              }).render('#paypal-button-container');                              
-    
-                                        </script>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <form action="" method="POST">
-              <h1>Team Sign Up</h1>
-              <fieldset>
-
-                <legend><span class="section">1</span>Your Team Info.</legend>
-
-                <label class="" for="name">Team Name:</label>
-                <input type="text" name="name" value="">
-
-                <label class="" for="email">Group Leader Email:</label>
-                <input type="email" name="email" value="">
-
-                <legend><span name="members" class="section">2</span>Who is on your team?</legend>
-                <p>Leaving members blank is okay. We can pair you with others or you can just combine groups into a
-                  full group and add it here later if you see another non-full group on here you want to pair with!</p>
-
-                <label class="members" for="teamMember1">Team Member 1:</label>
-                <input type="text" name="name" value="">
-
-                <label class="members" for="teamMember2">Team Member 2:</label>
-                <input type="text" name="name" value="">
-
-                <label class="members" for="teamMember3">Team Member 3:</label>
-                <input type="text" name="name" value="">
-
-                <label class="members" for="teamMember4">Team Member 4:</label>
-                <input type="text" name="name" value="">
-
-                <br>
-
-              </fieldset>
-
-              <fieldset>
-
-                <legend><span class="section">3</span>Extra Info For Chris:</legend>
-
-                <label class="" for="notes">Notes for Chris:</label>
-                <textarea name="notes"></textarea>
-
-                <label>Full Group Paid?</label>
-                <br>
-                <input type="radio" name="paid" value="yesPaid">
-                <label class="light" for="yesPaid">Yes!</label><br>
-
-                <input type="radio" name="paid" value="noPaid">
-                <label class="light" for="noPaid">No.</label><br>
-
-                <input type="radio" name="paid" value="futurePaid">
-                <label class="light" for="futurePaid">Paying at tournament.</label>
-                <p>If currently no, but mailing cash or check, then Chris will update his records upon receipt of
-                  payment.</p>
-
-              </fieldset>
-
-              <button type="submit">Sign Up</button>
-
-
-            </form>
-
-          </div>
+  <!--Half width tournament info column and row-->
+      <div class="row">
+        <div class="col-sm">
+            <p class="golfInfo">ALL OF THE TOURNAMENT INFO WILL GO HERE. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, vitae asperiores ratione repellendus eaque repudiandae qui, exercitationem quaerat quod nemo excepturi eveniet quae molestias vel cum aliquam sit eos? Iste!</p>
+  <!--Half Width display of all submitted teams on new row-->
+      <div class="row">
+        <div class="col-sm">
+          <p class="groupArea">WE WILL USE HANDLEBARS HERE!!!  GIT ALL GROUPS WILL BE ADDED HERE Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aperiam ullam molestias vero totam, nesciunt culpa quo blanditiis itaque rem maxime voluptas in consectetur laboriosam modi veritatis, corrupti odio quam.</p>
         </div>
       </div>
-    </div>
-    <br>
+  <!--Quarter width display of Google calendar or map on new row-->                              
+      <div class="row">
+        <div class="col-sm">
+          <h2>GOOGLE GOES UNDER THIS H2 TAG</h2>
+                <iframe src="https://calendar.google.com/calendar/b/2/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=event.calendar.uou%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FDenver"
+                  style="border-width:0" width="600" height="500" frameborder="0" scrolling="no"></iframe>
+        </div>
+  <!--Quarter width display of Paypal on same row as Google-->
+        <div class="col-sm">
+          <h2>PAYPAL GOES UNDER THIS H2 TAG</h2>
+          <!-- Paypall Button Code-->
+          <div id="paypal-button-container">
+            <script>
+                paypal.Buttons({
+                  createOrder: function(data, actions) {
+                // Set up the transaction
+                return actions.order.create({
+                  purchase_units: [{
+                    amount: {
+                      value: '0.01'
+                          }
+                        }]
+                      });
+                    }
+                  }).render('#paypal-button-container');                              
+            </script>
+          </div>                                   
+        </div>                           
+      </div>
+          </div>
+      <!--Group signup form-->
+      <div class="col-sm">
+        <form action="" method="POST">
+          <h1>Team Sign Up</h1>
+          <fieldset>
+      
+            <legend><span class ="section">1</span>Your Team Info.</legend>
+            
+            <label class ="" for="name">Team Name:</label>
+            <input type="text" name="name" value="">
 
-  </div>
+            <label class="" for="email">Group Leader Email:</label>
+            <input type="email" name="email" value="">
 
+            <legend><span name="members" class="section">2</span>Who is on your team?</legend>
+            <p>Leaving members blank is okay. We can pair you with others or you can just combine groups into a full group and add it here later if you see another non-full group on here you want to pair with!</p>
 
+            <label class="members" for="teamMember1">Team Member 1:</label>
+            <input type="text" name="name" value="">
 
+            <label class ="members" for="teamMember2">Team Member 2:</label>
+            <input type="text" name="name" value="">
 
+            <label class="members" for="teamMember3">Team Member 3:</label>
+            <input type="text" name="name" value="">
+
+            <label class="members" for="teamMember4">Team Member 4:</label>
+            <input type="text" name="name" value="">
+
+            <br>
+      
+          </fieldset>
+        
+          <fieldset>
+            <legend><span class="section">3</span>Extra Info For Chris:</legend>
+
+            <label class="" for="notes">Notes for Chris:</label>
+            <textarea name="notes"></textarea>
+
+            <label>Full Group Paid?</label>
+            <br>
+            <input type="radio" name="paid" value="yesPaid">
+            <label class="light" for="yesPaid">Yes!</label><br>
+
+            <input type="radio" name="paid" value="noPaid">
+            <label class="light" for="noPaid">No.</label><br>
+
+            <input type="radio" name="paid" value="futurePaid">
+            <label class="light" for="futurePaid">Paying at tournament.</label>
+              <p>If currently no, but mailing cash or check, then Chris will update his records upon receipt of payment.</p>
+          </fieldset>
+            <!--Submission button-->
+          <button type="submit">Sign Up</button>
+          </form>
+        </div>
+       </div>
+      </div>
+     </div>
+     <br>
+   </div>    
 </body>
 
 </html>
