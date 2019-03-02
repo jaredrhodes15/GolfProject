@@ -7,7 +7,9 @@
         <title>Photos</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito"></head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+        <script src="js/YourExternalJQueryScripts.js"></script>
     </head>
 <body>
   <!--Navbar-->
@@ -27,8 +29,26 @@
       </ul>
     </div>
   </nav>
-  <img src="assets/cooltext316042578940380.png" alt="Title Banner">
+  <img src="assets/cooltext316042578940380.png" class="titleBanner col-sm" alt="Title Banner">
   <br>
+
+  <h1>Upload file with Coudinary's jQuery plugin</h1>
+
+Learn more in this blog post - <a href="https://cloudinary.com/blog/direct_upload_made_easy_from_browser_or_mobile_app_to_the_cloud">Direct upload made easy, from browser or mobile app to the cloud</a>
+
+<form class="my-form">
+  <div class="form_line">
+  <h4>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</h4>
+    <div class="form_controls">
+      <div class="upload_button_holder">
+        <input type="file" name="file" class="cloudinary_fileupload" multiple>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="gallery"/>
+</div>
+
 
 </body>
 </html>
