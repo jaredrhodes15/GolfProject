@@ -53,13 +53,13 @@ body {
     font-family: "Nunito", sans-serif;
     color: #384047;
     background-image: url("../assets/Golfcourse.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 form {
-    max-width: 300px;
+    max-width: 480px;
     margin: 10px auto;
     padding: 10px 20px;
     background: rgba(246, 253, 247, 0.7);
@@ -156,7 +156,7 @@ button {
   }
 
 @media screen and (min-width: 480px) {
-    form {
-        max-width: 480px;
+    .container-fluid {
+        width: 100%
     }
 }
