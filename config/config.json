@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "Scuddogg15!",
+    "password": "Fla$h2169",
     "database": "golfdb",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Scuddogg15!",
+    "password": "Fla$h2169",
     "database": "golfdb",
     "host": "localhost",
     "dialect": "mysql",
