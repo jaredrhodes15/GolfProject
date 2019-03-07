@@ -7,7 +7,8 @@
     <title>Email Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito"></head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
@@ -31,7 +32,7 @@
 <!--Email form-->
   <main>
     <div class="container-fluid">
-      <form class="contact-form" action="api/sendemail" method="post" name="sendEmail">
+      <form class="contact-form" action="contactform.php" method="post" name="sendEmail">
         <div class="form-group">
           <legend><span name="members" class="section">1</span>  Your Name?</legend>
           <input type="text" class="form-control" name="name" id="yourName">

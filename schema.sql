@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS `newgolf`;
+CREATE DATABASE `newgolf`;
